@@ -5,8 +5,8 @@
     "iconFile": "icon.png",
     "author": {
         "name": "Dimsday",
-        "homepage": "https://www.dimsday.ru/",
-        "support": "https://www.dimsday.ru/"
+        "homepage": "https://github.com/Dimsday/WordReplacer",
+        "support": "https://github.com/Dimsday/WordReplacer/issues"
     },
     "name": "Word replacer",
     "nameSlug": "word-replacer",
