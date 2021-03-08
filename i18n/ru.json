@@ -1,0 +1,4 @@
+{
+    "WordReplacerApp_Filters": "Фильты",
+    "WordReplacerApp_Filters_Description": "Массив объектов с ключом `search` содержащим регулярное выражение (без косых чёрт), и `replace` содержащим новое содержимое."
+}

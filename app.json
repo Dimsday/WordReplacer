@@ -1,0 +1,18 @@
+{
+    "id": "1946c4a4-c360-45b2-aa0a-5a10b8fadd31",
+    "version": "1.0.0",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Dimsday",
+        "homepage": "https://www.dimsday.ru/",
+        "support": "https://www.dimsday.ru/"
+    },
+    "name": "Word replacer",
+    "nameSlug": "word-replacer",
+    "classFile": "WordReplacerApp.ts",
+    "description": "Replaces all occurences of words in messages with other words by regular expressions.",
+    "implements": [
+        "IPreMessageSentModify"
+    ]
+}

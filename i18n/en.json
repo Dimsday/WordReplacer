@@ -1,0 +1,4 @@
+{
+    "WordReplacerApp_Filters": "Filters",
+    "WordReplacerApp_Filters_Description": "This should be an array of objects with keys `search` containing a regex (without slashes), and `replace` containing the new content."
+}
