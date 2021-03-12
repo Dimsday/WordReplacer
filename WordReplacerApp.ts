@@ -28,7 +28,7 @@ export class WordReplacerApp extends App  implements IPreMessageSentModify {
         await configuration.settings.provideSetting({
             id: 'filters',
             type: SettingType.STRING,
-            packageValue: '[{"search": "#(\\d+)", "replace": "[$&](https://www1.example.com/issues/$1)"}, {"search": "BUG-(\\d+)", "replace": "[$&](https://www2.example.com/issues/$1)"}]',
+            packageValue: '[{"search": "#(\\\\d+)", "replace": "[$&](https://www1.example.com/issues/$1)"}, {"search": "BUG-(\\\\d+)", "replace": "[$&](https://www2.example.com/issues/$1)"}]',
             required: true,
             public: false,
             multiline: true,
@@ -52,7 +52,7 @@ export class WordReplacerApp extends App  implements IPreMessageSentModify {
         return builder.setText(text).getMessage();
     }
 
-    private parseConfig(text) {
+    private parseConfig(text: string) {
         let newFilters = [];
         try {
             newFilters = JSON.parse(text);
