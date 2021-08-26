@@ -1,11 +1,8 @@
 import { IAppAccessors, ILogger, IConfigurationExtend, IConfigurationModify, IEnvironmentRead, IRead, IHttp, IMessageBuilder, IPersistence } from '@rocket.chat/apps-engine/definition/accessors';
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IMessage, IPreMessageSentModify } from '@rocket.chat/apps-engine/definition/messages';
-//import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
-import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata/IAppInfo';
-import { SettingType } from '@rocket.chat/apps-engine/definition/settings/SettingType';
-import { ISetting } from '@rocket.chat/apps-engine/definition/settings/ISetting';
-//import { SettingType, ISetting } from '@rocket.chat/apps-engine/definition/settings';
+import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
+import { SettingType, ISetting } from '@rocket.chat/apps-engine/definition/settings';
 
 export class WordReplacerApp extends App  implements IPreMessageSentModify {
     private filters;
