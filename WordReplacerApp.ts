@@ -49,7 +49,7 @@ export class WordReplacerApp extends App  implements IPreMessageSentModify {
 
         Object.keys(this.filters).forEach((key) => {
             const filter = this.filters[key] || {};
-            text = text.replace(new RegExp(filter.search || '', 'gi'), filter.replace || '');
+            text = text.replace(new RegExp(filter.search || '', 'g'), filter.replace || '');
         });
 
         return builder.setText(text).getMessage();
